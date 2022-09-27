@@ -92,7 +92,7 @@
                                 <field name="company_id" groups="base.group_multi_company"/>
                             </group>
                             <group>
-                                <field name="department_id"/>
+                                <field invisible="1" name="department_id"/>
                                 <field invisible="1" name="parent_id" />
                                 <field name="coach_id"/>
                             </group>
@@ -212,7 +212,7 @@
                     <field name="work_phone" class="o_force_ltr" readonly="1"/>
                     <field name="work_email"/>
                     <field name="company_id" groups="base.group_multi_company" readonly="1"/>
-                    <field name="department_id"/>
+                    <field invisible="1" name="department_id"/>
                     <field name="job_id"/>
                     <field invisible="1" name="parent_id" />
                     <field name="work_location" optional="hide"/>
@@ -370,7 +370,7 @@
                     <field name="work_phone" class="o_force_ltr"/>
                     <field name="work_email"/>
                     <field name="company_id" groups="base.group_multi_company"/>
-                    <field name="department_id"/>
+                    <field name="department_id" invisible="1"/>
                     <field name="job_id"/>
                     <field name="coach_id" invisible="1"/>
                     <field name="parent_id" invisible="1"/>
