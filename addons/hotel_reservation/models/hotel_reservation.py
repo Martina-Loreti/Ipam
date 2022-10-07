@@ -31,7 +31,7 @@ class HotelReservation(models.Model):
 
     company_id = fields.Many2one(
         "res.company",
-        "Hotel",
+        "Palestra",
         readonly=True,
         index=True,
         required=True,
