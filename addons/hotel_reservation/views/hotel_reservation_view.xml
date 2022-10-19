@@ -183,7 +183,7 @@
                 <group expand="0" string="Group By">
                     <filter
                         name="partner_id"
-                        string="Guest Name"
+                        string="Nome Cognome"
                         icon="terp-personal"
                         domain="[]"
                         context="{'group_by':'partner_id'}"
