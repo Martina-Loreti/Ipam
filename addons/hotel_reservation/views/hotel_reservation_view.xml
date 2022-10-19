@@ -11,34 +11,34 @@
                     <button
                         name="action_send_reservation_mail"
                         type="object"
-                        string="Send Reservation Email"
+                        string="Invia Email di Prenotazione"
                         states="confirm"
                         class="oe_highlight"
                     />
                     <button
                         name="confirmed_reservation"
-                        string="Confirm"
+                        string="Conferma"
                         states="draft"
                         class="oe_highlight"
                         type="object"
                     />
                     <button
                         name="create_folio"
-                        string="Create Folio"
+                        string="Crea Folio"
                         states="confirm"
                         class="oe_highlight"
                         type="object"
                     />
                     <button
                         name="cancel_reservation"
-                        string="Cancel Reservation"
+                        string="Cancella Prenotazione"
                         states="draft,confirm"
                         class="oe_highlight"
                         type="object"
                     />
                     <button
                         name="set_to_draft_reservation"
-                        string="Set to Draft"
+                        string="Segna come bozza"
                         states="cancel"
                         class="oe_highlight"
                         type="object"
