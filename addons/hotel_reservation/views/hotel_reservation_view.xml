@@ -61,7 +61,7 @@
                             />
                         </button>
                     </div>
-                    <label for='reservation_no' string="Reservation No" />
+                    <label for='reservation_no' string="Prenotazione" />
                     <h1>
                         <field name="reservation_no" class="oe_inline" />
                     </h1>
