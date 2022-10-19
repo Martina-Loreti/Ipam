@@ -22,7 +22,7 @@ class HotelReservation(models.Model):
 
     reservation_no = fields.Char("Reservation No", readonly=True, copy=False)
     date_order = fields.Datetime(
-        "Date Ordered",
+        "Data Prenotazione",
         readonly=True,
         required=True,
         index=True,
