@@ -40,7 +40,7 @@ class HotelReservation(models.Model):
     )
     partner_id = fields.Many2one(
         "res.partner",
-        "Guest Name",
+        "Nome Cognome",
         readonly=True,
         index=True,
         required=True,
