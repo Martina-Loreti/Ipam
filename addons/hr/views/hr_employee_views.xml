@@ -86,15 +86,15 @@
                         </div>
                         <group>
                             <group>
-                                <field name="mobile_phone" widget="phone"/>
-                                <field name="work_phone" widget="phone"/>
-                                <field name="work_email" widget="email"/>
+                                <field invisible="1" name="mobile_phone" widget="phone"/>
+                                <field invisible="1" name="work_phone" widget="phone"/>
+                                <field invisible="1" name="work_email" widget="email"/>
                                 <field name="company_id" groups="base.group_multi_company"/>
                             </group>
                             <group>
                                 <field invisible="1" name="department_id"/>
                                 <field invisible="1" name="parent_id" />
-                                <field name="coach_id"/>
+                                <field invisible="1" name="coach_id"/>
                             </group>
                         </group>
                         <notebook>
@@ -105,7 +105,7 @@
                                             <field name="address_id"
                                                 context="{'show_address': 1}"
                                                 options='{"always_reload": True, "highlight_first_line": True}'/>
-                                            <field name="work_location"/>
+                                            <field invisible="1" name="work_location"/>
                                         </group>
                                         <group name="managers" string="Approvers" class="hide-group-if-empty">
                                             <!-- is overridden in other hr related modules -->
@@ -209,13 +209,13 @@
             <field name="arch" type="xml">
                 <tree string="Employees" multi_edit="1" sample="1">
                     <field name="name" readonly="1"/>
-                    <field name="work_phone" class="o_force_ltr" readonly="1"/>
-                    <field name="work_email"/>
+                    <field invisible="1" name="work_phone" class="o_force_ltr" readonly="1"/>
+                    <field invisible="1" name="work_email"/>
                     <field name="company_id" groups="base.group_multi_company" readonly="1"/>
                     <field invisible="1" name="department_id"/>
                     <field name="job_id"/>
                     <field invisible="1" name="parent_id" />
-                    <field name="work_location" optional="hide"/>
+                    <field invisible="1" name="work_location" optional="hide"/>
                     <field name="coach_id" invisible="1"/>
                 </tree>
             </field>
@@ -367,8 +367,8 @@
             <field name="arch" type="xml">
                 <tree string="Employees">
                     <field name="name"/>
-                    <field name="work_phone" class="o_force_ltr"/>
-                    <field name="work_email"/>
+                    <field invisible="1" name="work_phone" class="o_force_ltr"/>
+                    <field invisible="1" name="work_email"/>
                     <field name="company_id" groups="base.group_multi_company"/>
                     <field name="department_id" invisible="1"/>
                     <field name="job_id"/>
