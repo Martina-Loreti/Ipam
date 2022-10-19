@@ -48,7 +48,7 @@ class HotelReservation(models.Model):
     )
     pricelist_id = fields.Many2one(
         "product.pricelist",
-        "Scheme",
+        "Listino prezzi",
         required=True,
         readonly=True,
         states={"draft": [("readonly", False)]},
