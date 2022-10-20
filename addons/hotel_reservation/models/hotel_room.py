@@ -92,7 +92,7 @@ class RoomReservationSummary(models.Model):
     _name = "room.reservation.summary"
     _description = "Room reservation summary"
 
-    name = fields.Char("Reservation Summary", default="Reservations Summary")
+    name = fields.Char("Elenco Prenotazioni", default="Reservations Summary")
     date_from = fields.Datetime("Date From", default=lambda self: fields.Date.today())
     date_to = fields.Datetime(
         "Date To",
