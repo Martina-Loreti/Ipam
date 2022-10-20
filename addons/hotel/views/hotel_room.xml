@@ -63,7 +63,7 @@
                                     select="2"
                                     string="Room Manager"
                                 />
-                                <field name="capacità" />
+                                <field name="capacity" />
                                 <field name="uom_id" invisible="1" />
                                 <field
                                     name="supplier_taxes_id"
