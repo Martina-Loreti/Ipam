@@ -56,7 +56,7 @@ class HotelReservation(models.Model):
     )
     partner_invoice_id = fields.Many2one(
         "res.partner",
-        "Invoice Address",
+        "Indirizzo Fatturazione",
         readonly=True,
         states={"draft": [("readonly", False)]},
         help="Invoice address for " "current reservation.",
@@ -78,13 +78,13 @@ class HotelReservation(models.Model):
         help="Delivery address" "for current reservation. ",
     )
     checkin = fields.Datetime(
-        "Expected-Date-Arrival",
+        "Data-Ora di inizio",
         required=True,
         readonly=True,
         states={"draft": [("readonly", False)]},
     )
     checkout = fields.Datetime(
-        "Expected-Date-Departure",
+        "Data-Ora di fine",
         required=True,
         readonly=True,
         states={"draft": [("readonly", False)]},
@@ -162,7 +162,7 @@ class HotelReservation(models.Model):
             cap = 0
             for rec in reservation.reservation_line:
                 if len(rec.reserve) == 0:
-                    raise ValidationError(_("Please Select Rooms For Reservation."))
+                    raise ValidationError(_("Per favore seleziona un servizio."))
                 cap = sum(room.capacity for room in rec.reserve)
             if not ctx.get("duplicate"):
                 if (reservation.adults + reservation.children) > cap:
