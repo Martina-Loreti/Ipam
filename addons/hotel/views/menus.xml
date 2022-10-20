@@ -55,7 +55,7 @@
     />
     <menuitem
         id="menu_open_hotel_room_form"
-        name="Sale"
+        name="Servizi"
         action="action_hotel_room_form"
         sequence="5"
         parent="hotel.menu_hotel_room"
@@ -80,7 +80,7 @@
         sequence="2"
     />
     <menuitem
-        name="Tipi di Servizio"
+        name="Extra"
         id="menu_open_hotel_service_type_form_tree"
         action="open_hotel_service_type_form_tree"
         sequence="9"
@@ -88,7 +88,7 @@
     />
     <menuitem
         id="menu_open_hotel_services_form"
-        name="Servizi"
+        name="Extra"
         action="action_hotel_services_form"
         sequence="8"
         parent="hotel.menu_hotel_service"
