@@ -168,8 +168,8 @@
                 <field name="name" />
                 <field name="room_categ_id" />
                 <field name="list_price" string="Prezzo" />
-                <field name="stato" />
-                <field name="capacità" />
+                <field name="status" />
+                <field name="capacity" />
             </tree>
         </field>
     </record>
