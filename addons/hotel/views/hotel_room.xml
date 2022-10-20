@@ -260,7 +260,7 @@
                                         </li>
                                         <li>
                                             Capacity:
-                                            <field name="capacità" />
+                                            <field name="capacity" />
                                         </li>
                                     </ul>
                                 </div>
