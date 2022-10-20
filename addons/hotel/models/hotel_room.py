@@ -42,8 +42,8 @@ class HotelRoom(models.Model):
         "hotel.room.amenities", string="Room Amenities", help="List of room amenities."
     )
     status = fields.Selection(
-        [("disponibile", "Disponibile"), ("occupato", "Occupato")],
-        default="disponibile",
+        [("available", "Available"), ("occupied", "Occupied")],
+        default="available",
     )
     capacity = fields.Integer(required=True)
     room_line_ids = fields.One2many(
