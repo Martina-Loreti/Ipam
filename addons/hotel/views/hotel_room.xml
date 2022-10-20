@@ -63,17 +63,17 @@
                                     select="2"
                                     string="Room Manager"
                                 />
-                                <field name="capacity" />
+                                <field name="capacità" />
                                 <field name="uom_id" invisible="1" />
                                 <field
                                     name="supplier_taxes_id"
                                     widget="many2many_tags"
-                                    string="Supplier Taxes"
+                                    string="Tasse Fornitore"
                                 />
                                 <field
                                     name="taxes_id"
                                     widget="many2many_tags"
-                                    string="Customer Taxes"
+                                    string="Tasse Cliente"
                                 />
                             </group>
                         </page>
@@ -143,8 +143,8 @@
             <search string="Hotel Room">
                 <field name="name" filter_domain="[('name', 'ilike', self)]" />
                 <field name="room_categ_id" />
-                <field name="list_price" string="Room rate" />
-                <field name="status" string="Status" />
+                <field name="list_price" string="Prezzo" />
+                <field name="status" string="Stato" />
                 <newline />
                 <filter
                     name="available"
@@ -167,9 +167,9 @@
             <tree>
                 <field name="name" />
                 <field name="room_categ_id" />
-                <field name="list_price" string="Room rate" />
-                <field name="status" />
-                <field name="capacity" />
+                <field name="list_price" string="Prezzo" />
+                <field name="stato" />
+                <field name="capacità" />
             </tree>
         </field>
     </record>
@@ -260,7 +260,7 @@
                                         </li>
                                         <li>
                                             Capacity:
-                                            <field name="capacity" />
+                                            <field name="capacità" />
                                         </li>
                                     </ul>
                                 </div>
