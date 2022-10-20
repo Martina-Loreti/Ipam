@@ -22,13 +22,13 @@
     />
     <menuitem
         id="menu_hotel_room"
-        name="Sale"
+        name="Servizi"
         parent="hotel.hotel_configuration_menu"
         sequence="2"
     />
     <menuitem
         id="menu_open_hotel_room_type_form_tree"
-        name="Tipi di Sale"
+        name="Tipi di Servizi"
         action="open_hotel_room_type_form_tree"
         sequence="6"
         parent="hotel.menu_hotel_room"
