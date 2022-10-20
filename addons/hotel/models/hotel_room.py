@@ -36,14 +36,14 @@ class HotelRoom(models.Model):
     max_adult = fields.Integer()
     max_child = fields.Integer()
     room_categ_id = fields.Many2one(
-        "hotel.room.type", "Room Category", required=True, ondelete="restrict"
+        "hotel.room.type", "Tipo di Servizio", required=True, ondelete="restrict"
     )
     room_amenities_ids = fields.Many2many(
         "hotel.room.amenities", string="Room Amenities", help="List of room amenities."
     )
     status = fields.Selection(
-        [("available", "Available"), ("occupied", "Occupied")],
-        default="available",
+        [("disponibile", "Disponibile"), ("occupato", "Occupato")],
+        default="disponibile",
     )
     capacity = fields.Integer(required=True)
     room_line_ids = fields.One2many(
@@ -110,7 +110,7 @@ class HotelRoom(models.Model):
 class HotelRoomType(models.Model):
 
     _name = "hotel.room.type"
-    _description = "Room Type"
+    _description = "Tipipologia di Servizio"
 
     categ_id = fields.Many2one("hotel.room.type", "Category")
     child_ids = fields.One2many("hotel.room.type", "categ_id", "Room Child Categories")
