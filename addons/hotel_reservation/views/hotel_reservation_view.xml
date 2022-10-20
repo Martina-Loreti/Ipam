@@ -77,7 +77,7 @@
                                 context="{'default_customer_rank': 1}"
                             />
                             <field name="pricelist_id" col="2" />
-                            <field
+                            <field invisible="1"
                                 name="partner_order_id"
                                 domain="[('parent_id','=',partner_id)]"
                             />
@@ -364,7 +364,7 @@
                         <field name="company_id" />
                         <field name="pricelist_id" />
                         <field name="partner_invoice_id" />
-                        <field name="partner_order_id" />
+                        <field invisible="1" name="partner_order_id" />
                         <field name="partner_shipping_id" />
                         <field name="adults" />
                     </group>
