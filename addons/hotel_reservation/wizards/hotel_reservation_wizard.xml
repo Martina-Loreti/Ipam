@@ -51,7 +51,7 @@
     </record>
     <!--Action for hotel reservation wizard -->
     <record id="action_hotel_reservation_wizard" model="ir.actions.act_window">
-        <field name="name">Hotel Reservation Report</field>
+        <field name="name">Gym Reservation Report</field>
         <field name="res_model">hotel.reservation.wizard</field>
         <field name="binding_view_types">form</field>
         <field name="view_mode">form</field>
