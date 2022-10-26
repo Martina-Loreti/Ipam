@@ -29,7 +29,7 @@
     </record>
     <!--Action for folio report wizard -->
     <record id="hotel_folio_wizard" model="ir.actions.act_window">
-        <field name="name">Hotel Folio Report</field>
+        <field name="name">Gym Folio Report</field>
         <field name="res_model">folio.report.wizard</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
