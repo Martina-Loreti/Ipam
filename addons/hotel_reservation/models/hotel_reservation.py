@@ -173,8 +173,8 @@ class HotelReservation(models.Model):
                             " Members Accomodation."
                         )
                     )
-            if reservation.adults <= 0:
-                raise ValidationError(_("Adults must be more than 0"))
+            if reservation.adults < 0:
+                raise ValidationError(_("Adults must be positive"))
 
     @api.constrains("checkin", "checkout")
     def check_in_out_dates(self):
